@@ -6,6 +6,9 @@ import java.util.Random;
 public class Game {
 
     public int startGame(){
+
+        System.out.println("What sup! WHAT sup! WHAT'S UPPPPP! It's time to play, ROCK PAPER SCISSORS!");
+
         Scanner scanner = new Scanner(System.in);
 
         //start game
@@ -20,13 +23,13 @@ public class Game {
 
         switch (userChoice){
             case 1: Rock r = new Rock(cpuChoice);
-                result = r.checkOutcome();
+                showDown = r.checkOutcome();
                 break;
             case 2: Paper p = new Paper(cpuChoice);
-                result = p.checkOutcome();
+                showDown = p.checkOutcome();
                 break;
             case 3: Scissors s = new Scissors(cpuChoice);
-                result = s.checkOutcome();
+                showDown = s.checkOutcome();
                 break;
             default:
                 System.out.println("Please choose a different response");
