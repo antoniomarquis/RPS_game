@@ -21,7 +21,7 @@ public class Rock {
     }
 
     public int checkOutcome() {
-        if(cpuAnswer.equals("paper")){
+        if(cpuAnswer.equals("scissors")){
             return 1;
         } else {
             return 0;
